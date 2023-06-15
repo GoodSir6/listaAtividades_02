@@ -8,12 +8,90 @@
     */
 
     //ENTRADA
-
-
+    let n1 = Number(prompt("Insira um número:"));
+    const operacao = prompt("Qual operação você deseja realizar?");
+    let n2 = Number(prompt("Insira um número:"));
     //PROCESSAMENTO
-
-    
-    //SAÍDA
+    if (operacao == "soma" || operacao == "mais" || operacao == "+" || operacao == "somar") {
+        const somado = (n1 + n2)
+        alert(`O número é ${somado}`)
+        if (somado > 0) {
+            alert(`O número é positivo.`)
+        }
+        else {
+            alert(`O número éconst subtraido = (n1 - n2).replace(".",",") negativo.`)
+        }
+        if (somado % 2 == 0) {
+            alert(`O número é par.`)
+        } else {
+            alert(`O número é ímpar.`)
+        }
+        if (Number.isInteger(somado)) {
+            alert(`O número é inteiro.`)
+        } else {
+            alert(`O número é decimal.`)
+        }
+    }
+    if (operacao == "subtração" || operacao == "-" || operacao == "menos") {
+        const subtraido = (n1 - n2)
+        alert(`O número é ${subtraido}`)
+        if (subtraido > 0) {
+            alert(`O número é positivo.`)
+        }
+        else {
+            alert(`O número é negativo.`)
+        }
+        if (subtraido % 2 == 0) {
+            alert(`O número é par.`)
+        } else {
+            alert(`O número é ímpar.`)
+        }
+        if (Number.isInteger(subtraido)) {
+            alert(`O número é inteiro.`)
+        } else {
+            alert(`O número é decimal.`)
+        }
+    }
+    if (operacao == "vezes" || operacao == "multiplicação" || operacao == "*") {
+        const multiplicado = (n1 * n2)
+        alert(`O número é ${multiplicado}`)
+        if (multiplicado > 0) {
+            alert(`O número é positivo.`)
+        }
+        else {
+            alert(`O número é negativo.`)
+        }
+        if (multiplicado % 2 == 0) {
+            alert(`O número é par.`)
+        } else {
+            alert(`O número é ímpar.`)
+        }
+        if (Number.isInteger(multiplicado)) {
+            alert(`O número é inteiro.`)
+        } else {
+            alert(`O número é decimal.`)
+        }
+    }
+    if (operacao == "divisão" || operacao == "/") {
+        const dividido = (n1 / n2)
+        alert(`O número é ${dividido}`)
+        if (dividido > 0) {
+            alert(`O número é positivo.`)
+        }
+        else {
+            alert(`O número é negativo.`)
+        }
+        if (dividido % 2 == 0) {
+            alert(`O número é par.`)
+        } else {
+            alert(`O número é ímpar.`)
+        }
+        if (Number.isInteger(dividido)) {
+            alert(`O número é inteiro.`)
+        } else {
+            alert(`O número é decimal.`)
+        }
+    }
 
 
 </script>

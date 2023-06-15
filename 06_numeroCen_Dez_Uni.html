@@ -11,12 +11,12 @@
     */
 
     //ENTRADA
-
+    const n = Number(prompt("Insira um número menor que 1000"));
 
     //PROCESSAMENTO
-
-    
-    //SAÍDA
-
+    const cent = Math.floor(n / 100);
+    const dez = Math.floor((n % 100) / 10);
+    const uni = n % 10;
+    alert(`${cent} centenas, ${dez} dezenas e ${uni} unidades`);
 
 </script>

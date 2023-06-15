@@ -1,15 +1,20 @@
 <script>
-    /*
-    //PROBLEMA
-    Faça um script que pede dois inteiros e armazene eles em duas variáveis.
-    Em seguida, troque o valor das variáveis, invertendo e exibindo o antes e o depois em uma janela de alert.
-    */
+/*
+PROBLEMA
+Faça um script que pede dois inteiros e armazene eles em duas variáveis.
+Em seguida, troque o valor das variáveis, invertendo e exibindo o antes e o depois em uma janela de alert.
+*/
 
-    //ENTRADA
+//ENTRADA
+let num1 = prompt("Insira um numero inteiro.");
+let num2 = prompt("Insira outro número, diferente do primeiro.");
 
-    //PROCESSAMENTO
+//PROCESSAMENTO
+const num3 = num1;
+num1 = num2;
+num2 = num3;
 
-    //SAÍDA
-
+//SAÍDA
+alert(`Valores antigos de número 1 e número 2 é ${num2} e ${num1} e os valores novos é ${num1} e ${num2}.`);
     
 </script>

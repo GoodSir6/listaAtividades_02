@@ -14,12 +14,34 @@
     */
 
     //ENTRADA
-
-
+    let combus = prompt("Insira qual o combustível adquirido:").toLowerCase();
+    let litrosvendidos = Number(prompt("Insira a quantidade de litros comprados:").trim());
     //PROCESSAMENTO
-
-    
-    //SAÍDA
+    if (combus == "a" || combus == "álcool") {
+        if (litrosvendidos < 20) {
+            let desconto = (litrosvendidos * 6.10) * 0.07;
+            let valor = (litrosvendidos * 6.10) - desconto;
+            alert(`O preço total a ser pago é de R$${valor.toFixed(2).replace(".", ",")}.`);
+        }
+        if (litrosvendidos > 20) {
+            let desconto = (litrosvendidos * 6.10) * 0.05;
+            let valor = (litrosvendidos * 6.10) - desconto;
+            alert(`O preço total a ser pago é de R$${valor.toFixed(2).replace(".", ",")}.`);
+        }
+    } if (combus == "g" || combus == "gasolina") {
+        if (litrosvendidos < 20) {
+            let desconto = (litrosvendidos * 6.5) * 0.06;
+            let valor = (litrosvendidos * 6.5) - desconto;
+            alert(`O preço total a ser pago é de R$${valor.toFixed(2).replace(".", ",")}.`);
+        }
+        if (litrosvendidos > 20) {
+            let desconto = (litrosvendidos * 6.5) * 0.04;
+            let valor = (litrosvendidos * 6.5) - desconto;
+            alert(`O preço total a ser pago é de R$${valor.toFixed(2).replace(".", ",")}.`);
+        }
+    } else {
+        alert(`Só vendemos gasolina e álcool.`)
+    }
 
 
 </script>

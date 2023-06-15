@@ -9,11 +9,23 @@
     // Entre 5.9 e zero            E
 
     // Entrada
-
+    const nota = Number(prompt("Insira a sua nota:").replace(",","."));
     
     // Processamento
-
-    
-    // Saída
+if (nota >= 9 && nota <= 10) {
+    alert(`Convertendo a nota para letras, você tirou A`);
+}
+if (nota >= 8 && nota <= 8.9) {
+    alert(`Convertendo a nota para letras, você tirou B`);
+}
+if (nota >= 7 && nota <= 7.9) {
+    alert(`Convertendo a nota para letras, você tirou C`);
+}
+if (nota >= 6 && nota <= 6.9) {
+    alert(`Convertendo a nota para letras, você tirou D`);
+}
+if (nota >= 0 && nota <= 5.9) {
+    alert(`Convertendo a nota para letras, você tirou E`);
+}
 
 </script>

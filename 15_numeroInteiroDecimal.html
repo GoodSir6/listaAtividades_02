@@ -6,12 +6,13 @@
     */
 
     //ENTRADA
-
+    const numero = Number(prompt("Insira um número: (inteiro ou decimal)").trim().replace(",","."));
 
     //PROCESSAMENTO
-
+    if (Number.isInteger(numero)) {
+        alert(`O número ${numero} é inteiro.`)
+    } else {
+        alert(`O número ${numero} é decimal.`);
+    }
     
-    //SAÍDA
-
-
 </script>

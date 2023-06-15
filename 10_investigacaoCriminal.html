@@ -11,9 +11,40 @@
     */
 
     //ENTRADA
+    const tel = prompt("Você telefonou para a vítima?").toLowerCase().trim();
+    const loc = prompt("Esteve no local do crime?").toLowerCase().trim();
+    const mora = prompt("Mora perto da vitima?").toLowerCase().trim();
+    const divida = prompt("Devia para a vítima?").toLowerCase().trim();
+    const trab = prompt("Já trabalhou com a vítima?").toLowerCase().trim();
 
     //PROCESSAMENTO
-
-    //SAÍDA
+    let respostas = 0;
+    if (tel == "sim") {
+        respostas += 1;
+    }
+    if (loc == "sim") {
+        respostas += 1;
+    }
+    if (mora == "sim") {
+        respostas += 1;
+    }
+    if (divida == "sim") {
+        respostas += 1;
+    }
+    if (trab == "sim") {
+        respostas += 1;
+    }
+    if (respostas == 5) {
+        alert(`Você é o assassino!!`);
+    }
+    if (respostas == 4 || respostas == 3) {
+        alert(`Você é cúmplice!!`);
+    }
+    if (respostas == 2) {
+        alert(`Você é suspeito!`);
+    }
+    else {
+        alert(`Você é inocente.`)
+    }
 
 </script>

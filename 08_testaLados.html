@@ -3,10 +3,19 @@
     // Receba os três lados de um triângulo. Informe se os valores podem ser um triângulo. Indique, caso os lados formem um triângulo, se o mesmo é: equilátero, isósceles ou escaleno. Dica: pesquise sobre a regra para saber se os lados formam um triângulo e também sobre os tipos de triângulos.
 
     //Entrada
-
+const mdda1 = Number(prompt("insira o valor de um lado do triangulo"));
+const mdda2 = Number(prompt("insira o valor do outro lado do triangulo"));
+const mdda3 = Number(prompt("insira o valor de outro lado do triangulo"));
 
     //Processamento
-
-
+if (mdda1 == mdda2 && mdda2 == mdda3) {
+    alert(`É um triângulo equilátero.`);
+} 
+else if (mdda1 == mdda2 || mdda1 == mdda3 || mdda2 == mdda3) {
+    alert(`É um triângulo isósceles`);
+}
+else{
+    alert(`É um triângulo escaleno`);
+}
     //Saída
 </script>
